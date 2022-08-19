@@ -4,13 +4,15 @@ for (let i = 1; i <= 20; i++) {
 }
 
 function fizzbuzz(numero) {
-  if (numero % 3 === 0 && numero % 5 === 0) {
-    return "FizzBuzz";
-  } else if (numero % 3 === 0) {
-    return "Fizz";
-  } else if (numero % 5 === 0) {
-    return "Buzz";
-  } else {
-    return String(numero);
+  let mensagem = "";
+  if (numero % 3 === 0) {
+    mensagem = mensagem + "Fizz";
   }
+  if (numero % 5 === 0) {
+    mensagem = mensagem + "Buzz";
+  }
+  if (mensagem.length === 0) {
+    mensagem = String(numero);
+  }
+  return mensagem;
 }
