@@ -1,11 +1,16 @@
 for (let i = 1; i <= 20; i++) {
-  if (i % 3 === 0 && i % 5 === 0) {
-    console.log("FizzBuzz");
-  } else if (i % 3 === 0) {
-    console.log("Fizz");
-  } else if (i % 5 === 0) {
-    console.log("Buzz");
+  const mensagem = fizzbuzz(i);
+  console.log(mensagem);
+}
+
+function fizzbuzz(numero) {
+  if (numero % 3 === 0 && numero % 5 === 0) {
+    return "FizzBuzz";
+  } else if (numero % 3 === 0) {
+    return "Fizz";
+  } else if (numero % 5 === 0) {
+    return "Buzz";
   } else {
-    console.log(i);
+    return String(numero);
   }
 }
