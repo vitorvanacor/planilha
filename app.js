@@ -1,18 +1,13 @@
-for (let i = 1; i <= 20; i++) {
-  const mensagem = fizzbuzz(i);
-  console.log(mensagem);
-}
+const http = require('http');
 
-function fizzbuzz(numero) {
-  let mensagem = "";
-  if (numero % 3 === 0) {
-    mensagem = mensagem + "Fizz";
-  }
-  if (numero % 5 === 0) {
-    mensagem = mensagem + "Buzz";
-  }
-  if (mensagem.length === 0) {
-    mensagem = String(numero);
-  }
-  return mensagem;
-}
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Ola mundo, TUDO BOM!!!!!!!!!!!!!!!!!!!!');
+});
+
+server.listen(port, () => {
+    console.log(`Servidor ouvindo na porta ${port}`);
+});
