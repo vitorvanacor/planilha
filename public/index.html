@@ -1,2 +1,35 @@
-<h1>OLA MUNDO</h1>
-<p>Meu servidor legal</p>
+<link rel="stylesheet" href="style.css">
+<div class='pagina'>
+    <div class='conteudo'>
+      <h1>Planilha de gastos</h1>
+  
+      <div class='informacao'>
+        <p id='saldo'>Carregando saldo...</p>
+      </div>
+  
+      <table class='lista-transacoes'>
+        <thead>
+          <th class='coluna-descricao'>
+            <h3>DESCRIÇÃO</h3>
+          </th>
+          <th class='coluna-categoria'>
+            <h3>CATEGORIA</h3>
+          </th>
+          <th class='coluna-valor'>
+            <h3>VALOR</h3>
+          </th>
+        </thead>
+        <tbody id='lista-transacoes-conteudo'>
+          <tr>
+            <td>Carregando dados...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class='botoes'>
+      <button class='despesa' id='botao-despesa'>Adicionar despesa</button>
+      <button class='receita' id='botao-receita'>Adicionar receita</button>
+    </div>
+  </div>
+  <script src="script.js"></script>

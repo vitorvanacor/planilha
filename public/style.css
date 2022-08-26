@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;700&display=swap');
+
+* {
+  font-family: 'Source Sans 3', sans-serif;
+  color: #2f2f33;
+  margin: 0 auto;
+}
+
+.pagina {
+  max-width: 896px;
+  padding: 0 16px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.conteudo {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 51px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 56px;
+}
+
+.informacao {
+  width: 100%;
+  text-align: center;
+  background-color: #F5F6FA;
+  padding: 16px 0;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.informacao p {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.lista-transacoes {
+  width: 100%;
+}
+
+.lista-transacoes .coluna-descricao {
+  text-align: left;
+}
+
+.lista-transacoes .coluna-categoria {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.lista-transacoes .coluna-valor {
+  text-align: right;
+}
+
+.lista-transacoes th {
+  padding: 8px 0;
+}
+
+.lista-transacoes td {
+  padding: 16px 0;
+}
+
+.lista-transacoes h3 {
+  font-size: 14px;
+  color: #757680;
+}
+
+.botoes {
+  padding: 24px 0;
+}
+
+.botoes button {
+  padding: 8px 24px;
+  border: 0;
+  border-radius: 8px;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 18px;
+  min-width: 200px;
+  cursor: pointer;
+  letter-spacing: 0.4px;
+}
+
+.botoes button:hover {
+  transform: scale(1.0175);
+  opacity: 0.9;
+}
+
+.botoes .despesa {
+  background-color: #fff;
+  color: #E02B57;
+}
+
+.botoes .receita {
+  background-color: #E02B57;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .botoes,
+  .botoes button {
+    width: 100%;
+  }
+}
