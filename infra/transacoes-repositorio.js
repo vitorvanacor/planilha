@@ -13,7 +13,7 @@ const transacoes = {
     ]
 }
 
-class TransacoesRepositorio {
+module.exports = class TransacoesRepositorio {
 
     listarTransacoes() {
         return transacoes
@@ -24,5 +24,3 @@ class TransacoesRepositorio {
         lista.push(transacao)
     }
 }
-
-module.exports = TransacoesRepositorio
